@@ -1,0 +1,73 @@
+@use '../util/breakpoints.scss' as *;
+@use '../util/functions.scss' as *;
+
+.navbar {
+    position: relative;
+    padding: rem(20);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        font-size: rem(25);
+        font-weight: 800;
+        color: var(--sec-text-color);
+        cursor: pointer;
+    }
+
+    &__toggle { //mobile toggle
+        > span {
+            display: block;
+            width: rem(26);
+            height: rem(3);
+            background-color: var(--sec-text-color);
+            transform-origin: 3px 1px;
+            transition: all .3s ease-in-out;
+
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+
+    }
+    &__links {
+        display: flex;
+        
+        li:not(:last-child) {
+            margin-right: rem(37);
+        }
+        li a {
+            color: var(--black);
+            transition: all .3s ease-in-out;
+            &:hover {
+                color: var(--sec-text-color);
+            }
+        }
+    }
+    &__link {
+        .login {
+            font-weight: 600;
+            border: 1px solid var(--blue);
+            border-radius: rem(17);
+            padding: rem(8) rem(22);
+            margin-right: -5px;
+
+            &:hover {
+                color: var(--white);
+                background-color: var(--blue);
+            }
+        }
+        .signUp {
+            font-weight: 600;
+            border-radius: rem(17);
+            color: var(--white);
+            padding: rem(8) rem(22);
+            background-color: var(--blue);
+
+            &:hover {
+                color: var(--white);
+                background-color: #0029bf ;
+            }
+        }
+    }
+}

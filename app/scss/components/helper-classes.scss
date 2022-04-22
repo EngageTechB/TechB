@@ -1,0 +1,31 @@
+@use '../util/breakpoints.scss' as *;
+@use '../util/functions.scss' as *;
+
+
+
+.p-all {
+    @include breakpoint-up(medium) {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}
+
+.container {
+    padding-right: rem(25);
+    padding-left: rem(25);
+}
+
+.box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_container {
+    @include breakpoint-up(large) {
+        padding: rem(120);
+    }
+    @include breakpoint-up(medium) {
+        padding: rem(100);
+    }
+}

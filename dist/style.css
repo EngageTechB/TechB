@@ -16,7 +16,7 @@ html {
 :before {
   box-sizing: inherit;
   list-style: none;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 body {
   font-family: var(--primary-font);

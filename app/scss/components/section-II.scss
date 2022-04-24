@@ -2,3 +2,16 @@
 @use '../util/functions.scss' as *;
 @use '../util/mixins.scss' as *;
 
+
+.whoWeAre {
+    margin-top: rem(150);
+
+    .text-card {
+        display: flex;
+        flex-direction: column;
+
+        & h3 {
+            // display: none;
+        }
+    }
+}

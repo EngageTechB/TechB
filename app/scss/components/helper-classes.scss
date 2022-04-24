@@ -4,10 +4,8 @@
 
 
 .p-all {
-    @include breakpoint-up(medium) {
-        padding-right: 3rem;
-        padding-left: 3rem;
-    }
+        padding-right: rem(40);
+        padding-left: rem(40);
 }
 
 .container {
@@ -22,10 +20,7 @@
 }
 
 .hero_container {
-    @include breakpoint-up(large) {
-        padding: rem(120);
-    }
     @include breakpoint-up(medium) {
-        padding: rem(100);
+        padding: rem(30);
     }
 }
